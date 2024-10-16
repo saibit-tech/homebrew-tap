@@ -1,14 +1,14 @@
 class OgcCli < Formula
   desc "ogc"
   homepage "https://github.com/saibit-tech/open-gpu-cloud"
-  version "0.0.1"
+  version "0.0.3"
 
   if Hardware::CPU.intel?
-    url "https://github.com/saibit-tech/homebrew-ogc-cli/releases/download/ogc-cli-v0.0.1/ogc_cli-darwin_amd64"
-    sha256 "3c0b574a94bb4249aebb6ca903b4fd0516d7699886253b135859799576396b1d"
+    url "https://github.com/saibit-tech/homebrew-ogc-cli/releases/download/ogc-cli-v0.0.3/ogc_cli-darwin_amd64"
+    sha256 "340d392ba4968203325bb4e30eb890eb145e3aa2023cb9f416b9df9dd7558b77"
   elsif Hardware::CPU.arm?
-    url "https://github.com/saibit-tech/homebrew-ogc-cli/releases/download/ogc-cli-v0.0.1/ogc_cli-darwin_arm64"
-    sha256 "13dd2f8f19f02e3145165fce0de8e226f5dff4994c7779888238952b0b5a6b8e"
+    url "https://github.com/saibit-tech/homebrew-ogc-cli/releases/download/ogc-cli-v0.0.3/ogc_cli-darwin_arm64"
+    sha256 "903db130e2aeeb0d4ec32e5df9378cc503eb0dc8b0a401073c8eb4f885de95d6"
   else
     odie "Unsupported CPU architecture"
   end
