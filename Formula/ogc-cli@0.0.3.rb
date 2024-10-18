@@ -24,10 +24,10 @@ class OgcCliAT003 < Formula
     end
 
   def install
-    if Hardware::CPU.intel?
+    if OS.mac? &&Hardware::CPU.intel?
       bin.install "ogc_cli-darwin_amd64" => "ogc"
     end
-    if Hardware::CPU.arm?
+    if OS.mac? &&Hardware::CPU.arm?
       bin.install "ogc_cli-darwin_arm64" => "ogc"
     end
 
@@ -38,8 +38,6 @@ class OgcCliAT003 < Formula
     if OS.linux? && Hardware::CPU.arm?
        bin.install "ogc_cli-linux_arm64" => "ogc"
     end
-
-    system "xattr", "-c", "#{bin}/ogc"
   end
 
   test do
