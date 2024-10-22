@@ -10,7 +10,7 @@
 
     if OS.mac? && Hardware::CPU.arm?
       url "https://github.com/saibit-tech/homebrew-tap/releases/download/ogc-cli-v0.0.4/ogc_cli-darwin_arm64"
-      sha256 "903db130e2aeeb0d4ec32e5df9378cc503eb0dc8b0a401073c8eb4f885de95d6]"
+      sha256 "903db130e2aeeb0d4ec32e5df9378cc503eb0dc8b0a401073c8eb4f885de95d6"
     end
 
     if OS.linux? && Hardware::CPU.intel?
