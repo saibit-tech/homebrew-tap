@@ -5,22 +5,22 @@
 
     if OS.mac? && Hardware::CPU.intel?
       url "https://github.com/saibit-tech/homebrew-tap/releases/download/ogc-cli-v0.0.5/ogc_cli-darwin_amd64"
-      sha256 "c78bf3d621539a3cfb65d50d0f7ffd7ff5a704939f3aa3d0b0f09760a51b744d"
+      sha256 "78498c5b6010a3cae1e5b9d7b8d5409dbbb6b0f782ccb1882d8fd2b21f3438cf"
     end
 
     if OS.mac? && Hardware::CPU.arm?
       url "https://github.com/saibit-tech/homebrew-tap/releases/download/ogc-cli-v0.0.5/ogc_cli-darwin_arm64"
-      sha256 "99b228acf3b579867e40705f0bfa27c7a05438a5b78f3a0d9aaf5c1f94b23b51"
+      sha256 "ed937685ca36612e8413a945b2a8cff6b20320af28064451444816a39d475337"
     end
 
     if OS.linux? && Hardware::CPU.intel?
       url "https://github.com/saibit-tech/homebrew-tap/releases/download/ogc-cli-v0.0.5/ogc_cli-linux_amd64"
-      sha256 "d8deffb632b6c4da2df2d7191d44328b8d19ce9a5328c569b8a2f16b1b0508aa"
+      sha256 "6ac5089e84830021b38f389fbc0116017719595043b1153d33371c4d41a0b0fc"
     end
 
     if OS.linux? && Hardware::CPU.arm?
       url "https://github.com/saibit-tech/homebrew-tap/releases/download/ogc-cli-v0.0.5/ogc_cli-linux_arm64"
-      sha256 "d955e1d50cb1156205ce0b68a1bce984e8cb147573fad890fcf9ade24f2e369a"
+      sha256 "efbb2d6e88477b628a59339c5f09473d9de1885a0e2454e48e7971386100b827"
     end
 
     def install
